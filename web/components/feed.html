@@ -1,0 +1,28 @@
+<!-- Komponen: Konten Utama / Feed Video Grid -->
+<section id="feedSection" class="view-section active">
+  <!-- Judul Bagian Feed -->
+  <div class="feed-header">
+    <h2 id="feedTitle" class="feed-title">Trending Indonesia</h2>
+    <span id="feedCount" class="feed-count"></span>
+  </div>
+
+  <!-- Grid Kartu Video (Diisi otomatis oleh JavaScript) -->
+  <div id="cardsGrid" class="cards-grid"></div>
+
+  <!-- Animasi Loading Shimmer Saat Memuat Data -->
+  <div id="loadingSkeleton" class="cards-grid" style="display:none;">
+    <div class="skeleton-card"><div class="sk-thumb"></div><div class="sk-title"></div><div class="sk-sub"></div></div>
+    <div class="skeleton-card"><div class="sk-thumb"></div><div class="sk-title"></div><div class="sk-sub"></div></div>
+    <div class="skeleton-card"><div class="sk-thumb"></div><div class="sk-title"></div><div class="sk-sub"></div></div>
+    <div class="skeleton-card"><div class="sk-thumb"></div><div class="sk-title"></div><div class="sk-sub"></div></div>
+    <div class="skeleton-card"><div class="sk-thumb"></div><div class="sk-title"></div><div class="sk-sub"></div></div>
+    <div class="skeleton-card"><div class="sk-thumb"></div><div class="sk-title"></div><div class="sk-sub"></div></div>
+  </div>
+
+  <!-- Tampilan Jika Video Kosong / Tidak Ditemukan -->
+  <div id="emptyState" class="empty-state" style="display:none;">
+    <div class="empty-icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.4a6.75 6.75 0 11-13.5 0 6.75 6.75 0 0113.5 0z"/></svg></div>
+    <h3>Tidak ada video ditemukan</h3>
+    <p>Coba kata kunci pencarian yang lain atau periksa koneksi internet Anda.</p>
+  </div>
+</section>

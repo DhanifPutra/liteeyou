@@ -1,0 +1,36 @@
+<!-- Komponen: Header & Search Bar -->
+<header class="app-header">
+  <div class="header-left">
+    <button id="sidebarToggleBtn" class="icon-btn" title="Buka/Tutup Sidebar">
+      <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5"/></svg>
+    </button>
+    <div class="brand" id="brandBtn" title="Kembali ke Beranda">
+      <img src="logo.webp" alt="Logo" class="brand-logo" width="28" height="28">
+      <span class="brand-text">YouTube <span class="highlight">Lite</span></span>
+    </div>
+  </div>
+
+  <!-- Kolom Pencarian -->
+  <div class="header-center">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari video di YouTube atau tempel URL..." autocomplete="off">
+      <button id="clearSearchBtn" class="clear-btn" title="Hapus teks"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      <button id="searchBtn" class="search-btn" title="Cari Video">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.4a6.75 6.75 0 11-13.5 0 6.75 6.75 0 0113.5 0z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <button id="navHomeBtn" class="nav-pill active">
+      <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75V19.5a.75.75 0 00.75.75h4.5v-4.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v4.5h4.5a.75.75 0 00.75-.75V9.75"/></svg> Beranda</span>
+    </button>
+    <button id="navDownloadsBtn" class="nav-pill" title="Buka Halaman Pengelola Unduhan">
+      <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M7.5 12 12 16.5m0 0 4.5-4.5M12 16.5V3"/></svg> Unduhan</span>
+      <span id="navDownloadsBadge" class="pill-badge" style="display:none;">0</span>
+    </button>
+    <button id="fullscreenToggleBtn" class="icon-btn" title="Layar Penuh (F11 atau F)">
+      <svg id="fsIcon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9V5.25c0-.828.672-1.5 1.5-1.5H9m6 0h3.75c.828 0 1.5.672 1.5 1.5V9m0 6v3.75c0 .828-.672 1.5-1.5 1.5H15m-6 0H5.25c-.828 0-1.5-.672-1.5-1.5V15"/></svg>
+    </button>
+  </div>
+</header>

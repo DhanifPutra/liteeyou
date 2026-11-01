@@ -1,0 +1,57 @@
+# Lingkungan Python & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+venv/
+ENV/
+
+# File Biner Eksternal (Melebihi batas ukuran GitHub 100MB / Arsitektur spesifik OS)
+tools/*.dll
+tools/*.exe
+tools/*.jar
+tools/*.a
+!tools/.gitkeep
+!tools/yt-dlp.conf
+!tools/LICENSE.LGPL
+
+# Data Runtime Pengguna & File Download
+bookmarks.json
+history.json
+*.part
+*.ytdl
+*.log
+*.mp4
+*.mp3
+*.webm
+*.m4a
+
+# Editor & Konfigurasi IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# File Sistem Operasi
+.DS_Store
+Thumbs.db
+desktop.ini

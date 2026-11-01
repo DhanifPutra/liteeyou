@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Lite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. Menu Header & Kolom Pencarian -->
+  <div data-include="components/header.html"></div>
+
+  <!-- 2. Menu Filter Kategori Cepat (Trending, Musik, Gaming, dll) -->
+  <div data-include="components/category_bar.html"></div>
+
+  <!-- Kontainer Layout Utama -->
+  <div class="main-layout">
+    <!-- 3. Menu Sidebar Navigasi & Bookmark Channel -->
+    <div data-include="components/sidebar.html"></div>
+
+    <!-- 4. Area Feed Video Grid (Beranda, Pencarian, & Riwayat) & Pengelola Unduhan -->
+    <main class="content-area">
+      <div data-include="components/feed.html"></div>
+      <div data-include="components/downloads.html"></div>
+    </main>
+  </div>
+
+  <!-- 5. Modal / Dialog Tambah Channel & Modal Pilihan Unduhan -->
+  <div data-include="components/modal_channel.html"></div>
+  <div data-include="components/modal_download.html"></div>
+
+  <!-- Notifikasi Toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Script Logika Frontend -->
+  <script src="app.js"></script>
+</body>
+</html>
